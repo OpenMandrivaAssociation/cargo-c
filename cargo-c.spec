@@ -13,6 +13,7 @@ Source0:        https://github.com/lu-zero/cargo-c/archive/v%{version}/%{name}-%
 BuildRequires:  rust
 BuildRequires:  rust-src
 BuildRequires:  cargo
+BuildRequires:	pkgconfig(openssl)
 
 %description
 cargo applet to build and install C-ABI compatibile dynamic and static
