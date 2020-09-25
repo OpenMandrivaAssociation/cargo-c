@@ -1,15 +1,13 @@
 %define debug_package %{nil}
 
 Name:           cargo-c
-Version:        0.6.7
+Version:        0.6.13
 Release:        1
 Summary:        cargo applet to build and install C-ABI compatibile libraries
-
 License:        BSD
 # Also https://github.com/lu-zero/cargo-c
 URL:            https://crates.io/crates/cargo-c
 Source0:        https://github.com/lu-zero/cargo-c/archive/v%{version}/%{name}-%{version}.tar.gz
-
 BuildRequires:  rust
 BuildRequires:  rust-src
 BuildRequires:  cargo
@@ -24,7 +22,7 @@ and a dynamic library, and a C header to be used by any C
 (and C-compatible) software.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 cargo build --release
