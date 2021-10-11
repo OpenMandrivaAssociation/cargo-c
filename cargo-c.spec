@@ -35,3 +35,5 @@ cargo install --root %{buildroot}%{_prefix} --no-track --path .
 %license LICENSE
 %{_bindir}/cargo-cbuild
 %{_bindir}/cargo-cinstall
+%{_bindir}/cargo-capi
+%{_bindir}/cargo-ctest
