@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+#define debug_package %{nil}
 
 Name:           cargo-c
 Version:        0.9.4
