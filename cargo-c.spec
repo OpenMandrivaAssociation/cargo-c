@@ -1,7 +1,7 @@
-%define debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 Name:           cargo-c
-Version:        0.6.15
+Version:        0.9.4
 Release:        1
 Summary:        cargo applet to build and install C-ABI compatibile libraries
 License:        BSD
@@ -35,3 +35,5 @@ cargo install --root %{buildroot}%{_prefix} --no-track --path .
 %license LICENSE
 %{_bindir}/cargo-cbuild
 %{_bindir}/cargo-cinstall
+%{_bindir}/cargo-capi
+%{_bindir}/cargo-ctest
