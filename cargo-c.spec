@@ -2,7 +2,7 @@
 
 Name:           cargo-c
 Version:        0.9.17
-Release:        1
+Release:        2
 Summary:        cargo applet to build and install C-ABI compatibile libraries
 License:        BSD
 # Also https://github.com/lu-zero/cargo-c
