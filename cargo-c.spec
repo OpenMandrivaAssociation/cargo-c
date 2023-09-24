@@ -12,6 +12,7 @@ BuildRequires:  rust
 BuildRequires:  rust-src
 BuildRequires:  cargo
 BuildRequires:	pkgconfig(openssl)
+BuildRequires:  pkgconfig(libssh2)
 
 %description
 cargo applet to build and install C-ABI compatibile dynamic and static
