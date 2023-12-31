@@ -25,7 +25,7 @@ and a dynamic library, and a C header to be used by any C
 (and C-compatible) software.
 
 %prep
-%autosetup -n %{name}-v%{version} -a1 -p1
+%autosetup -n %{name}-%{version} -a1 -p1
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
