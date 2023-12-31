@@ -8,6 +8,8 @@ License:        BSD
 # Also https://github.com/lu-zero/cargo-c
 URL:            https://crates.io/crates/cargo-c
 Source0:        https://github.com/lu-zero/cargo-c/archive/v%{version}/%{name}-%{version}.tar.gz
+Source1:        vendor.tar.xz
+Source2:        cargo_config
 BuildRequires:  rust
 BuildRequires:  rust-src
 BuildRequires:  cargo
@@ -23,7 +25,9 @@ and a dynamic library, and a C header to be used by any C
 (and C-compatible) software.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-v%{version} -a1 -p1
+mkdir .cargo
+cp %{SOURCE2} .cargo/config
 
 %build
 cargo build --release
