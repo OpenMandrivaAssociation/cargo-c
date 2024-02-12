@@ -1,7 +1,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:           cargo-c
-Version:        0.9.29
+Version:        0.9.30
 Release:        1
 Summary:        cargo applet to build and install C-ABI compatibile libraries
 License:        BSD
